@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+
+/* ------------------------------------------------------------------------- global styling */
+html {
+    overflow: auto;
+    scrollbar-gutter: stable;
+}
+
+.g-base {
+    background-color: #222831;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', sans-serif;
+    color: #eeeeee;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.g-header {
+    background-image: url(../images/background.svg);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto 100%;
+
+    .heading {
+        font-family: 'Tiny5';
+        font-size: 5rem;
+        line-height: 80%;
+    }
+
+    .subheading {
+        font-size: 1.7rem;
+        font-style: italic;
+    }
+}
+
+.g-nav {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+
+    .current-page {
+        background-color: #31363f;
+        color: #eeeeee;
+        width: 160px;
+        height: 40px;
+        border-left: 1px solid #222831;
+        border-right: 1px solid #222831;
+        display: flex;
+        align-items: center;
+        justify-content: center;    
+    }
+        
+    a {
+        background-color: #65c66a;
+        color: #31363f;
+        text-decoration: none;
+        width: 160px;
+        height: 40px;
+        border-left: 1px solid #222831;
+        border-right: 1px solid #222831;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: #31363f;
+            color: #eeeeee;
+        }
+    }
+}
+
+.g-section-heading {
+    font-family: 'Tiny5';
+    font-size: 2rem;
+    padding-bottom: 16px;
+    line-height: 100%;
+}
+
+.g-footer {
+    font-size: 0.8rem;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+i {
+    color: #65c66a;
+    font-size: 1.2rem;
+}
+
+
+/* ------------------------------------------------------------------------- multi-page styling */
+#p-home, #p-resume, #p-web-app-samples, #p-other-samples {
+    flex-basis: 1200px;
+}
+
+
+/* ------------------------------------------------------------------------- p-home styling */
+#p-home {
+
+    main {
+        display: flex;
+        gap: 30px;
+
+        #s-bio {
+            line-height: 125%;
+        }
+
+        #s-figure {
+            margin: 0px;
+            padding-top: 5px;
+    
+            img {
+                border-radius: 5px;
+                height: 450px;
+                width: 300px;
+            }
+
+            figcaption {
+                text-align: center;
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------------------------- p-resume styling */
+#p-resume {
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .flex-item {
+
+            #s-education, #s-training, #s-work-experience, #s-employment-skills, #s-communication-skills, #s-technical-skills, #s-contact, #s-references {
+                line-height: 125%;
+    
+                span {
+                    font-style: italic;
+                }
+            }
+
+            #s-education, #s-training, #s-employment-skills, #s-communication-skills, #s-contact {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------------------------- p-web-app-samples styling */
+#p-web-app-samples {
+    
+    main {
+        display:flex;
+        flex-wrap: wrap;
+
+        #s-featured-web-app {
+            line-height: 125%;
+
+            .flex-container {
+                display: flex;
+                gap: 30px;
+                
+                figure {
+                    margin: 0px;
+
+                    img {
+                        border-radius: 5px;
+                        height: 300px;
+                        width: 600px;
+                    }
+                }
+
+                .flex-item {
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        #s-web-apps {
+            padding-top: 30px;
+            line-height: 125%;
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .flex-item {
+                    flex-basis: 380px;
+
+                    span {
+                        font-style: italic;
+                    }
+
+                    img {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        border-radius: 5px;
+                        height: 190px;
+                        width: 380px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------------------------- p-other-samples styling */
+#p-other-samples {
+    
+    main {
+        display:flex;
+        flex-wrap: wrap;
+
+        #s-featured-other {
+            line-height: 125%;
+
+            .flex-container {
+                display: flex;
+                gap: 30px;
+                
+                figure {
+                    margin: 0px;
+
+                    img {
+                        border-radius: 5px;
+                        height: 300px;
+                        width: 600px;
+                    }
+                }
+
+                .flex-item {
+
+                    span {
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+
+        #s-other {
+            padding-top: 30px;
+            line-height: 125%;
+
+            .flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 30px;
+
+                .flex-item {
+                    flex-basis: 540px;
+
+                    span {
+                        font-style: italic;
+                    }
+
+                    img {
+                        margin-top: 10px;
+                        margin-bottom: 5px;
+                        border-radius: 5px;
+                        height: 290px;
+                        width: 540px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* ------------------------------------------------------------------------- media queries */
+@media screen and (max-width: 950px) {
+
+    #p-web-app-samples {
+    
+        main {
+    
+            #s-featured-web-app {
+    
+                .flex-container {
+                    display: block;
+
+                    figure {
+                        padding-bottom: 15px;
+
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #p-other-samples {
+    
+        main {
+    
+            #s-featured-other {
+    
+                .flex-container {
+                    display: block;
+
+                    figure {
+                        padding-bottom: 15px;
+
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .g-nav {
+        flex-direction: column;
+
+        .current-page {
+            width: 100%;
+            height: auto;
+            margin-top: 2px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-left: none;
+            border-right: none;
+        }
+            
+        a {
+            width: 100%;
+            height: auto;
+            margin-top: 2px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            border-left: none;
+            border-right: none;
+        }
+    }
+
+    #p-home {
+
+        main {
+            flex-direction: column;
+
+            #s-figure {
+                padding-top: 20px;
+
+                img {
+                    display: block;
+                    margin: auto;
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    #p-web-app-samples {
+
+        main {
+
+            #s-web-apps {
+
+                .flex-container {
+
+                    .flex-item {
+
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #p-other-samples {
+
+        main {
+
+            #s-other {
+
+                .flex-container {
+
+                    .flex-item {
+
+                        img {
+                            height: auto;
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .g-header {
+        background-image: none;
+    }
+}
